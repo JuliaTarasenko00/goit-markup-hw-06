@@ -474,6 +474,7 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  display: block;
 }
 .subscribe-input {
   width: 264px;
@@ -722,8 +723,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 11px 38px;
-  transition: border var(--transition), border-radius var(--transition),
-    fill var(--transition);
+  transition: border var(--transition), border-radius var(--transition);
 }
 .modal-input:focus {
   border: 1px solid #4d5ae5;
@@ -737,6 +737,7 @@ body {
   left: 19px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill var(--transition);
 }
 .modal-content {
   padding: 8px 16px;

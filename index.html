@@ -453,9 +453,10 @@
           </ul>
         </div>
         <div class="subscribe-footer">
-          <p class="subscribe-text">Subscribe</p>
+          <label for="email" class="subscribe-text">Subscribe</label>
           <div class="subscribe-wrap">
             <input
+              id="email"
               class="subscribe-input"
               name="user-email"
               type="email"
@@ -482,9 +483,12 @@
             <div class="modal-img">
               <input
                 class="modal-input"
-                id="ucer-name"
+                id="user-name"
                 name="user-name"
                 type="text"
+                pattern="[a-zA-Zа-яА-ЯіІїЇ]+$"
+                minlength="2"
+                required
               />
               <svg class="input-img" width="12" height="12">
                 <use href="./images/symbol-defs.svg#icon-name"></use>
@@ -496,9 +500,12 @@
             <div class="modal-img">
               <input
                 class="modal-input"
-                id="ucer-tel"
+                id="user-tel"
                 name="user-tel"
                 type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
               />
               <svg class="input-img" width="12" height="12">
                 <use href="./images/symbol-defs.svg#icon-tel"></use>
@@ -510,9 +517,10 @@
             <div class="modal-img">
               <input
                 class="modal-input"
-                id="ucer-email"
+                id="user-email"
                 name="user-email"
                 type="email"
+                required
               />
               <svg class="input-img" width="12" height="12">
                 <use href="./images/symbol-defs.svg#icon-email"></use>
@@ -523,7 +531,7 @@
             <label for="user-content" class="user-text">Comment</label>
             <textarea
               class="modal-content"
-              id="ucer-content"
+              id="user-content"
               name="user-content"
               placeholder="Text input"
             ></textarea>
