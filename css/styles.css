@@ -748,6 +748,7 @@ body {
   background-color: transparent;
   outline: none;
   resize: none;
+  display: block;
 }
 .modal-content::placeholder {
   color: rgba(117, 117, 117, 0.5);
