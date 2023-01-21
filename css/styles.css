@@ -390,12 +390,13 @@ body {
 /* ---------footer ----------*/
 .ending > .container {
   display: flex;
-  gap: 120px;
 }
-
-/* .footer-social {
- max-width: 208px;
-} */
+.footer-text {
+  margin-right: 120px;
+}
+.footer-social {
+  margin-right: 80px;
+}
 .ending {
   background: #2e2f42;
   padding-top: 100px;
@@ -509,9 +510,7 @@ body {
   background: #4d5ae5;
   border: 1px solid #4d5ae5;
   border-radius: 4px;
-  cursor: pointer;
-}
-.subscribe-btn-icon {
+  cursor: pointer;  
   position: relative;
 }
 .subscribe-btn::after {
@@ -672,7 +671,6 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 24px;
   height: 24px;
-  display: inline-block;
   box-sizing: border-box;
   border-radius: 50%;
   display: block;
@@ -680,6 +678,7 @@ body {
   transition: background var(--transition), border-radius var(--transition),
     fill var(--transition);
   margin-bottom: 24px;
+  cursor: pointer;
 }
 .backdrop-btn:hover,
 .backdrop-btn:focus {
@@ -700,7 +699,7 @@ body {
 }
 
 .modal-field + .modal-field {
-  margin-top: 15px;
+  margin-top: 8px;
 }
 .user-text {
   font-family: "Roboto", sans-serif;
@@ -711,6 +710,7 @@ body {
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
+  display: block;
 }
 .modal-img {
   position: relative;
