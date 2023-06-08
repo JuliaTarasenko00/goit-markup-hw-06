@@ -679,6 +679,9 @@ body {
     fill var(--transition);
   margin-bottom: 24px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .backdrop-btn:hover,
 .backdrop-btn:focus {
